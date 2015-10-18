@@ -80,7 +80,7 @@ int main() {
 
 
 
-
+	outfile << "0" << " " << x[0] << endl;
 	for (int i = 1; i < n; i++) {
 
 		mattimes(deltat, a, m1);
@@ -89,7 +89,7 @@ int main() {
 
 		// x = (1 + m1)*x;
 		matvecmult(m2, x, x);
-		outfile << (i*deltat) << " " << x[0] << " " << x[1] << " " << x[2] << endl;
+		outfile << (i*deltat) << " " << x[0] << endl;
 	}
 
 
